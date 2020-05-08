@@ -15,6 +15,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val name = intent.getStringExtra(LoginActivity.USER_NAME)
+        val email = intent.getStringExtra(LoginActivity.USER_EMAIL)
+
+        text_full_name.text = name
+        text_email_address.text = email
+
         text_mail.setOnClickListener {
             val mailIntent = Intent(Intent.ACTION_SEND)
             mailIntent.data = Uri.parse("mailto:chibuzoonuoha57@gmail.com")

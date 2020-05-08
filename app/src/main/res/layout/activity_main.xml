@@ -33,13 +33,22 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
+            android:id="@+id/text_full_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_gravity="center"
-            android:text="@string/my_name"
+            tools:text="@tools:sample/full_names"
             android:textStyle="bold"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/text_email_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="@tools:sample/first_names"
+            android:textStyle="" />
 
         <TextView
             android:layout_width="wrap_content"
